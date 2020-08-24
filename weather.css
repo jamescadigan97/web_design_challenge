@@ -15,15 +15,15 @@ body {
 
 /* Style navigation */
 .navbar {
-  padding: 10px;
+  padding: 5px;
   background: white;
 }
 
 .navbar li {
   display: inline-block;
-  padding: 20px;
-  margin-right: 10px;
-  margin-left: 10px;
+  padding: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
   cursor: pointer;
   background: #fff;
   border-radius: 3px;
@@ -34,14 +34,14 @@ body {
   text-decoration: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .navbar li {
-    padding: 10px;
+    padding: 5px;
   }
 
   .post {
-    margin-right: 30px;
-    margin-left: 30px;
+    margin-right: 7px;
+    margin-left: 7px;
   }
 
   .navbar ul {
@@ -72,7 +72,11 @@ object-fit: cover;
   color: rgb(76, 221, 149)
 }
 
-
+.page_title {
+  font-size: 20px;
+  text-align: center;
+  color: rgb(76, 221, 149);;
+}
 /*
 h1 {
   font-size: 60px;
