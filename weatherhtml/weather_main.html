@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Data</title>
+<!-- <link rel="stylesheet" href="reset.css"> -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="weather.css">
+
+</head>
+<body>
+<div>
+    <nav>
+  <div class="container">
+    <nav class="navbar">
+      <ul>
+        <li> 
+          <select>
+            <option>Plots</option>
+            <option><a href="/weatherhtml/humidity.html">Humidity</a></option>
+            <option><a href="#">Cloudiness</a></option>
+            <option><a href="#">Humidity</a></option>
+            <option><a href="#">Windspeed</a></option>
+          </select>
+        </li>
+        <li>
+          <a href="/weatherhtml/Comparison.html">Comparision </a>
+        </li>
+        <li>
+          <a href="/weatherhtml/openweather_data.html">Data</a>
+        </li>
+      </ul>
+      <select id="drop_down">
+        <option><a href="/weatherhtml/humidity.html">Humidity</a></option>
+        <option>Cloudiness </option>
+        <option>Windspeed</option>
+        <option>Comparision </option>
+        <option> value = "http://127.0.0.1:5500/weatherhtml/humidity.html" >Data </option>
+      </select>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="/weatherhtml/humidity.html">Humidity</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+    </nav>
+  </div>  
+
+<main>
+  <br><br><br>
+  <body>
+<!-- 1st Container start -->
+    <div class="row">
+      <div class="col-md-2">
+        <p></p>
+      </div>
+      <div class="col-md-8" id="main_container">
+        <element class="section">
+          <header>
+              <h2>Various Weather Charactoristics</h2>
+          </header>
+        </element>
+        <p>The goal of this webite is to show the relationship between weather patterns and latitude. 
+        It can be used to help predict various factors of weather given the latitude of the city. 
+        The factors of weather that we chose to analyze are Maximum temperature, cloudiness, and windspeed. 
+        The data used in this project comprises of over 500 cities from OpenWeatherMap API. After getting the data,
+        we used Matplotlib to plot the results. This website shows maximum temperature, wind speed, humidity and cloudiness
+        vary by latitude.
+      </p>
+      </div>
+      <div class="col-md-2">
+
+      </div>
+    </div>
+<br><br>
+<!-- 2nd Container start -->
+    <div class="row">
+      <div class="col-md-2">
+      </div>
+      <div class="col-md-8" id="main_container">
+        <element class="section">
+          <header>
+            <h2>Visualizations</h2>
+          </header>
+        </element>
+<!-- Nested -->
+        <section>
+          <div class="row">
+            <div class="col-md-6" >
+              <img src="../Resources/assets/images/Fig1.png" class="img-responsive fit-image"a lt="">
+              <img src="../Resources/assets/images/Fig2.png" class="img-responsive fit-image" alt="">
+            </div>
+            <div class="col-md-6" >
+              <img src="../Resources/assets/images/Fig3.png" class="img-responsive fit-image" alt="">
+              <img src="../Resources/assets/images/Fig4.png" class="img-responsive fit-image" alt="">
+            </div>
+          </div>
+        </section>
+<!-- Nested End -->
+      </div>
+      <div class="col-md-2">
+        <p></p>
+      </div>
+    </div>
+  </body>
+</main>
