@@ -15,13 +15,12 @@
   <div class="container">
     <nav class="navbar">
       <h3 class ="page_title">Latitude</h3>
-      <ul class="button_list">
+      <ul>
         <li>
           <a href="index.html">Homepage </a>
         </li>
         <li>
           <select onchange="location = this.value;">
-            <option>Plots</option>
             <option value= "max_temp.html">Maximum Temperature</option> 
             <option value= "cloudiness.html">Cloudiness</option>
             <option value= "humidity.html">Humidity</option>
@@ -36,7 +35,7 @@
         </li>
       </ul>
       <select id= "drop_down" onchange="location = this.value;">
-        <option>Plots</option>
+        <option value= "index.html">Plots</option> 
         <option value= "max_temp.html">Maximum Temperature</option> 
         <option value= "cloudiness.html">Cloudiness</option>
         <option value= "humidity.html">Humidity</option>
@@ -46,7 +45,6 @@
       </select>
     </nav>
   </div>  
-
 <main>
   <br><br><br>
   <body>
