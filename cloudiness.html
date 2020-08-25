@@ -21,7 +21,6 @@
         </li>
         <li>
           <select onchange="location = this.value;">
-            <option>Plots</option>
             <option value= "max_temp.html">Maximum Temperature</option> 
             <option value= "cloudiness.html">Cloudiness</option>
             <option value= "humidity.html">Humidity</option>
@@ -36,6 +35,7 @@
         </li>
       </ul>
       <select id= "drop_down" onchange="location = this.value;">
+        <option value= "index.html">Plots</option> 
         <option value= "max_temp.html">Maximum Temperature</option> 
         <option value= "cloudiness.html">Cloudiness</option>
         <option value= "humidity.html">Humidity</option>
@@ -44,7 +44,7 @@
         <option value="data.html">Data</a></option>
       </select>
     </nav>
-  </div>  
+  </div>  v>  
 
 <main>
 <br><br><br>
@@ -55,9 +55,11 @@
         <p></p>
       </div>
       <div class="col-md-8" id="main_container">
-        <header>
-          <h2>Comparison</h2>
-      </header>
+        <element class="section">
+          <header>
+              <h2>Cloudiness</h2>
+          </header>
+        </element>
         <img src="./Resources/assets/images/Fig3.png" class="img-responsive fit-image" alt="">
         <br><br><br>
         <p> This graph shows that there is a negative parabloic correlation between latitude and maximum temperature.
